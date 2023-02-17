@@ -11,7 +11,7 @@ kind a fork from [taffychan's x-ui](https://github.com/taffychan/x-ui) + [hossin
 - Everything is in English (Serverside setup + Serverside UI + Web UI)
 - System status monitoring
 - Support multi-user multi-protocol, web page visualization operation
-- Multi UUIDs can be added as users for Vmess and Vless configurations with seperate QR codes
+- Multi UUIDs can be added as users for Vmess and Vless configurations with separate QR codes
 - IP limitation
 - Supported protocols: vmess, vless, trojan, shadowsocks, dokodemo-door, socks, http
 - Support to configure more transmission configurations
@@ -39,14 +39,17 @@ bash <(curl -Ls https://raw.githubusercontent.com/NidukaAkalanka/x-ui-english/ma
 
 ## Manual install & upgrade
 
-1. First update your system
-1. Then download the latest compressed package from https://github.com/NidukaAkalanka/x-ui-english/releases/latest, generally choose `amd64` architecture
-2. Upload the compressed package to the `/root/` directory of the server, and use the `root` user to log in to the server and run following commands
+1. First update your system and run the following commands. (Must have root user permissions)
+```` 
+sudo su
+cd
+````
+2. Then download the latest compressed package from https://github.com/NidukaAkalanka/x-ui-english/releases/latest, generally choose `amd64` architecture
+3. Run the following commands respectively:
 
 > If your server cpu architecture is not `amd64`, replace `*` in the command with another architecture
 
 ````
-cd
 rm x-ui/ /usr/local/x-ui/ /usr/bin/x-ui -rf
 tar zxvf x-ui-linux-amd64.tar.gz
 chmod +x x-ui/x-ui x-ui/bin/xray-linux-* x-ui/x-ui.sh
@@ -114,7 +117,7 @@ Precautions:
 - The certificates applied for by this script are all generic domain name certificates
 
 ## IP Limitation and Multi-User on Same Port
-There is almost nothing to explain abount Multi-User thing. You will have seperate QR codes along with traffic calculation, expiry date setting and stuff. 
+There is almost nothing to explain abount Multi-User thing. You will have separate QR codes along with traffic calculation, expiry date setting and stuff. 
 
 **The IP limitation woks as follows:**
 
@@ -129,7 +132,7 @@ There is almost nothing to explain abount Multi-User thing. You will have sepera
 - Then, his mobile's internet connection through v2ray will be stopped. Returning **ERR_CONNECTION_CLOSED**. 
 
 **Occasion:**
-- Afetr some time, the same client, mentioned above, disonnects his PC from v2ray
+- After some time, the same client, mentioned above, disonnects his PC from v2ray
 - But keeps his mobile trying to connect
 
 **Outcome:**
@@ -196,12 +199,14 @@ If you are looking to modify Telegram Bot functions, the Bot's code lives at `/w
 - Multi-user IDs for Vmess and Vless 
 - Lack of Telegram bot implementation 
 - Release packages being much heavier in size 
-- Download traffic not being monitored -- Fized on 0.2.1
+- Download traffic not being monitored
 ### Fixed on 0.2.1 --
 - Download data not being calculated
-- Lack of seperate QR codes for each multi-users on VMess/Vless
+- Lack of separate QR codes for each multi-users on VMess/Vless
 - Operation hours not being translated to English 
 - IP limitation not being worked
 - Minor bugs with Docker installation 
 ### Fixed on 0.2.1.1 --
 - Error while swithcing Xray version
+### Fixed on 0.2.1.2 --
+- ip.gs error causing IP scraping errors
