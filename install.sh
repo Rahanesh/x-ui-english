@@ -61,13 +61,13 @@ info_bar(){
     clear
     echo -e "${GREEN} --------------------------------------------------------------------- ${PLAIN}"
     echo -e "${GREEN}   __   __           _    _ _____    ______             _ _     _      ${PLAIN}"
-    echo -e "${GREEN}   \ \ / /          | |  | |_   _|  |  ____|           | (_)   | |     ${PLAIN}"
-    echo -e "${GREEN}    \ V /   ______  | |  | | | |    | |__   _ __   __ _| |_ ___| |__   ${PLAIN}"
-    echo -e "${GREEN}     > <   |______| | |  | | | |    |  __| |  _ \ / _  | | / __|  _ \  ${PLAIN}"
+    echo -e "${GREEN}   \ \ / /          | |  | |_ M _|  |  ____|           | (_)   | |     ${PLAIN}"
+    echo -e "${GREEN}    \ V /   ______  | |  | | |A|    | |__   _ __   __ _| |_ ___| |__   ${PLAIN}"
+    echo -e "${GREEN}     > <   |______| | |  | | |N|    |  __| |  _ \ / _  | | / __|  _ \  ${PLAIN}"
     echo -e "${GREEN}    / . \           | |__| |_| |_   | |____| | | | (_| | | \__ \ | | | ${PLAIN}"
-    echo -e "${GREEN}   /_/ \_\           \____/|_____|  |______|_| |_|\__, |_|_|___/_| |_| ${PLAIN}"
+    echo -e "${GREEN}   /_/ \_\           \____/|_VPN |  |______|_| |_|\__, |_|_|___/_| |_| ${PLAIN}"
     echo -e "${GREEN}                                                  __/ |                ${PLAIN}"
-    echo -e "${GREEN}                                                 |___/                 ${PLAIN}"
+    echo -e "${GREEN}     t.me/ManVPN_bot                             |___/                 ${PLAIN}"
     echo -e "${GREEN} --------------------------------------------------------------------- ${PLAIN}"
     echo ""
     echo -e "OS: ${GREEN} ${CMD} ${PLAIN}"
@@ -145,7 +145,7 @@ download_xui(){
     chmod +x x-ui bin/xray-linux-$(archAffix)
     cp -f x-ui.service /etc/systemd/system/
     
-    wget -N --no-check-certificate https://raw.githubusercontent.com/NidukaAkalanka/x-ui-english/main/x-ui.sh -O /usr/bin/x-ui
+    wget -N --no-check-certificate https://raw.githubusercontent.com/Rahanesh/x-ui-english/main/x-ui.sh -O /usr/bin/x-ui
     chmod +x /usr/local/x-ui/x-ui.sh
     chmod +x /usr/bin/x-ui
 }
@@ -215,13 +215,13 @@ install_xui() {
     echo -e ""
     echo -e "${GREEN} --------------------------------------------------------------------  ${PLAIN}"
     echo -e "${GREEN}   __   __           _    _ _____    ______             _ _     _      ${PLAIN}"
-    echo -e "${GREEN}   \ \ / /          | |  | |_   _|  |  ____|           | (_)   | |     ${PLAIN}"
-    echo -e "${GREEN}    \ V /   ______  | |  | | | |    | |__   _ __   __ _| |_ ___| |__   ${PLAIN}"
-    echo -e "${GREEN}     > <   |______| | |  | | | |    |  __| |  _ \ / _  | | / __|  _ \  ${PLAIN}"
+    echo -e "${GREEN}   \ \ / /          | |  | |_ M _|  |  ____|           | (_)   | |     ${PLAIN}"
+    echo -e "${GREEN}    \ V /   ______  | |  | | |A|    | |__   _ __   __ _| |_ ___| |__   ${PLAIN}"
+    echo -e "${GREEN}     > <   |Rahnesh | |  | | |N|    |  __| |  _ \ / _  | | / __|  _ \  ${PLAIN}"
     echo -e "${GREEN}    / . \           | |__| |_| |_   | |____| | | | (_| | | \__ \ | | | ${PLAIN}"
-    echo -e "${GREEN}   /_/ \_\           \____/|_____|  |______|_| |_|\__, |_|_|___/_| |_| ${PLAIN}"
+    echo -e "${GREEN}   /_/ \_\           \____/|_VPN_|  |______|_| |_|\__, |_|_|___/_| |_| ${PLAIN}"
     echo -e "${GREEN}                                                  __/ |                ${PLAIN}"
-    echo -e "${GREEN}                                                 |___/                 ${PLAIN}"
+    echo -e "${GREEN}   t.me/manvpn_bot                               |___/                 ${PLAIN}"
     echo -e "${GREEN} --------------------------------------------------------------------- ${PLAIN}"
     echo -e ""
     echo -e "------------------------------------------------------------------------------"
@@ -244,10 +244,10 @@ install_xui() {
     echo -e "Please do consider supporting authors"
     echo -e "------------------------------------------------------------------------------"
     echo -e "vaxilu            - https://github.com/vaxilu" 
-    echo -e "taffychan         - https://github.com/taffychan"  
-    echo -e "Hossin Asaadi     - https://github.com/hossinasaadi"
-    echo -e "Yu FranzKafka     - https://github.com/FranzKafkaYu"
     echo -e "Niduka Akalanka   - https://github.com/NidukaAkalanka"
+    echo -e "Hossin Asaadi     - https://github.com/hossinasaadi"
+    echo -e "Rahanesh Media    - https://github.com/Rahanesh"
+    echo -e "ManVPN_Bot        - https://t.me/ManVPN"
     echo -e "--------------------------------------------------------------------------------"
     show_login_info
     echo -e ""
